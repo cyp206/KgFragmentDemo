@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TempDemo</string>
+    <string name="title_activity_service_ativity">ServiceAtivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

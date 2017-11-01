@@ -1,0 +1,30 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <EditText
+        android:id="@+id/pinglun"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/fabiao"
+        android:focusable="true"
+        android:hint="来说一句吧..."
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/fabiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:padding="8dp"
+        android:text="发表"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+</RelativeLayout>

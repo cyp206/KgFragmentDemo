@@ -1,0 +1,1 @@
+include ':app', ':serverserviceaidl', ':magicfilter', ':commonlibrary'

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.snow.yp.kgdemo.xfomade.ActionBarActivity">
+
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="19"-->
+    <!--android:textSize="58sp"-->
+    <!--android:typeface="monospace"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="19"-->
+    <!--android:textSize="58sp"-->
+    <!--android:typeface="serif"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="19"-->
+    <!--android:textSize="58sp"-->
+    <!--android:typeface="sans"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.snow.yp.kgdemo.puzzViewThumbnail.PuzzThumbnailView
+        android:id="@+id/ptView"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/iv_view"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="300dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="300dp" />&ndash;&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/rl_option"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="#60ffffff"-->
+    <!--android:visibility="gone"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<SeekBar-->
+    <!--android:id="@+id/seekBar_round_corner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/seekBar" />-->
+
+    <!--<SeekBar-->
+    <!--android:id="@+id/seekBar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginTop="10dp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<com.snow.yp.kgdemo.xfomade.rainbowactionbar.ActionBarBg-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--<com.snow.yp.kgdemo.surface.SurfaceDemo-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="200dp" />-->
+
+
+    <com.snow.yp.kgdemo.xfomade.rainbowactionbar.BottomActionBar
+        android:id="@+id/btn_aciton_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"></com.snow.yp.kgdemo.xfomade.rainbowactionbar.BottomActionBar>
+
+</RelativeLayout>
