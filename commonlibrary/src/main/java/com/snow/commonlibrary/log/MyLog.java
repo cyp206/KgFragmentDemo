@@ -10,8 +10,8 @@ public class MyLog {
 
     public static final String TAG = "mu_zi";
 
-    public static void i(String string, String... objs) {
-//        Log.i(TAG, String.format(string, objs));
+    public static void i(String msg) {
+        Log.i(TAG, msg);
     }
 
 }
