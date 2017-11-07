@@ -19,8 +19,6 @@
 
         <service
             android:name=".ServerService"
-            android:enabled="true"
-            android:exported="true"
             android:process=":mu">
             <intent-filter>
                 <action android:name="mu.snow.com.myapplication" />

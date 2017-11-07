@@ -1,0 +1,11 @@
+### Binder
+* AIDL的本质其实就是生成一个Binder，我们通过aidl生成java文件的过程来看
+    * 首先定义aidl接口，其中引用到的bean类必须实现parcel序列化，并且声明一个bean.aidl文件
+    * 通过编译系统生成对应的java类（结构如下）
+        * 该接口继承了IInterface
+        * DESCRIPTOR：Binder唯一标示，采用类全名表示。
+        * 子类Stub及其持有的静态的Proxy类
+        * asBinder--返回当前Binder对象
+        * onTransact--运行在服务端的线程池中，当客户端发起跨进程请求时，远程请求会将请求交由该方法处理，根据传入的code执行相应的操作，若果有返回值的话reply会将返回值写入。其中有个return返回值，我们可以根据在这里进行权限校验
+        * Proxy#function()--该方法运行在客户端，当客户端发起远程调用时，生成相应的输入参数parcel对象data，然后调用transact方法，接着服务端执行ontransact并返回结果，这个时候client属于挂起状态，直到binder返回结果同时唤起client
+* Binder对象是一个可以跨进程引用的对象，而他的实体位于一个进程之中

@@ -1,7 +1,6 @@
-package com.snow.yp.kgdemo.service;
+package com.snow.yp.kgdemo.IPC;
 
 import android.os.Binder;
-import android.os.IBinder;
 
 /**
  * Created by y on 2017/7/3.

@@ -26,11 +26,11 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".service.ServiceAtivity"
+            android:name=".IPC.ServiceAtivity"
             android:label="@string/title_activity_service_ativity"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <service android:name=".service.MyService" />
+        <service android:name=".IPC.MyService" />
 
         <activity android:name=".opengles.OpenglActivity" />
         <activity
@@ -47,6 +47,21 @@
             </intent-filter>
         </activity>
         <activity android:name=".Handler.HandlerActivity"></activity>
+
+        <service
+            android:name=".IPC.AidlIPC.BookManagerService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+
+            <intent-filter>
+                <action android:name="mu.snow.com.myapplication" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".IPC.AidlIPC.BookMangerActivity" />
     </application>
 
 </manifest>

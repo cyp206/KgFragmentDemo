@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.snow.commonlibrary.recycleview.BaseAdapter;
 import com.snow.yp.kgdemo.Handler.HandlerActivity;
+import com.snow.yp.kgdemo.IPC.AidlIPC.BookMangerActivity;
 import com.snow.yp.kgdemo.adapter.MainAdapter;
 import com.snow.yp.kgdemo.adapter.holder.JMBean;
 
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     public List<JMBean> getDatas() {
         List<JMBean> datas = new ArrayList<>();
         datas.add(new JMBean("10、Handler", HandlerActivity.class));
+        datas.add(new JMBean("2、IPC", BookMangerActivity.class));
         return datas;
     }
 }

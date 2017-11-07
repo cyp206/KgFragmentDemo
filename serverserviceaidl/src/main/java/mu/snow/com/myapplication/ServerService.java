@@ -12,6 +12,7 @@ import android.os.Process;
 import android.os.RemoteException;
 import android.support.annotation.IntDef;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 /**
  * Created by y on 2017/7/4.
@@ -49,6 +50,7 @@ public class ServerService extends Service {
 
     @Override
     public void onCreate() {
+        Log.i("mu_zi","ServerService"+"onCreate()");
         super.onCreate();
 
     }

@@ -1,0 +1,10 @@
+### AidlIPC流程
+* 在了解binder的运行原理的情况下，通过aidl实现ipc
+* 首先客户端
+    * 通过创建connection，拿到binder并且转换成指定的binder，接着绑定service，然后通过binder进行客户端操作
+* 服务端
+    * 通过aidl生成相应的interface，然后实现接口的stub，接着service中的onbind绑定该binder。
+* 注
+    * 如果想要添加服务器回调接口的话，过程更普通的接口回到情况差不多，只不过也需要走aidl实现binder，
+    * 其中有个反注册问题，简单的反注册是无法解除注册的，需要采用RemoteCallbackList，该方法根据底层的ibinder作为key实现接口鉴别，并且反注册。
+    * 还有一个要注意的是，RemoteCallbackList进行遍历或者获取总数时需要使用geginBroadcast和finishBroadcast方法，该方法会复内部的map，用以遍历，该方法都是成对使用的，切记。

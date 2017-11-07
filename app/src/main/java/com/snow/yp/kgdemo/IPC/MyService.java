@@ -1,4 +1,4 @@
-package com.snow.yp.kgdemo.service;
+package com.snow.yp.kgdemo.IPC;
 
 import android.app.Notification;
 import android.app.NotificationManager;

@@ -1,4 +1,4 @@
-package com.snow.yp.kgdemo.service;
+package com.snow.yp.kgdemo.IPC;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import android.view.View;
 
 import com.snow.yp.kgdemo.R;
 
-import mu.snow.com.myapplication.IMyAidlInterface;
+//import mu.snow.com.myapplication.IMyAidlInterface;
 
 public class ServiceAtivity extends AppCompatActivity {
     private final String ACTION_BIND_SERVICE = "mu.snow.com.myapplication";
@@ -27,19 +27,19 @@ public class ServiceAtivity extends AppCompatActivity {
 //             service
 //            IMyAidInter
 
-            IMyAidlInterface iMyAidlInterface = IMyAidlInterface.Stub.asInterface(service);
-            if (iMyAidlInterface != null) {
-                try {
-                    int pid =iMyAidlInterface.getPid();
-                    Log.i("snow__Client", pid + "");
-                    Log.i("snow_server", "" + Process.myPid());
-                } catch (RemoteException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (service instanceof MyService.MyBinder) {
-                ((MyService.MyBinder) service).getService().showNotificcaiton();
-            }
+//            IMyAidlInterface iMyAidlInterface = IMyAidlInterface.Stub.asInterface(service);
+//            if (iMyAidlInterface != null) {
+//                try {
+//                    int pid =iMyAidlInterface.getPid();
+//                    Log.i("snow__Client", pid + "");
+//                    Log.i("snow_server", "" + Process.myPid());
+//                } catch (RemoteException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//            if (service instanceof MyService.MyBinder) {
+//                ((MyService.MyBinder) service).getService().showNotificcaiton();
+//            }
         }
 
         @Override

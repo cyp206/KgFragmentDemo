@@ -16,6 +16,10 @@ import butterknife.ButterKnife;
 import static com.snow.yp.kgdemo.R.id.tv_show;
 import static java.lang.Thread.currentThread;
 
+
+/**
+ * 10、Handler
+ */
 public class HandlerActivity extends AppCompatActivity {
     ThreadLocal<Boolean> booleanThreadLocal = new ThreadLocal<>();
     @BindView(tv_show)
