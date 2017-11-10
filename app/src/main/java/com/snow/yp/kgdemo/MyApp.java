@@ -29,7 +29,7 @@ public class MyApp extends Application {
     }
 
 
-    public Context getContext() {
+    public static  Context getContext() {
         return mContext;
     }
 }

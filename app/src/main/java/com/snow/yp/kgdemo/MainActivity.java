@@ -11,6 +11,7 @@ import com.snow.yp.kgdemo.Handler.HandlerActivity;
 import com.snow.yp.kgdemo.IPC.AidlIPC.BookMangerActivity;
 import com.snow.yp.kgdemo.adapter.MainAdapter;
 import com.snow.yp.kgdemo.adapter.holder.JMBean;
+import com.snow.yp.kgdemo.greendao.GreenDaoActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         List<JMBean> datas = new ArrayList<>();
         datas.add(new JMBean("10、Handler", HandlerActivity.class));
         datas.add(new JMBean("2、IPC", BookMangerActivity.class));
+        datas.add(new JMBean("GreenDao", GreenDaoActivity.class));
         return datas;
     }
 }

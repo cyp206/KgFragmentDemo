@@ -35,7 +35,7 @@
         <activity android:name=".opengles.OpenglActivity" />
         <activity
             android:name=".camera.MyCameraActivity"
-            android:theme="@style/AppTheme.FullScreen"></activity>
+            android:theme="@style/AppTheme.FullScreen" />
         <activity
             android:name=".tablayout.TablayoutActivity"
             android:theme="@style/NotitleTheme" />
@@ -46,14 +46,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Handler.HandlerActivity"></activity>
+        <activity android:name=".Handler.HandlerActivity" />
 
         <service
             android:name=".IPC.AidlIPC.BookManagerService"
             android:enabled="true"
             android:exported="true"
             android:process=":remote">
-
             <intent-filter>
                 <action android:name="mu.snow.com.myapplication" />
 
@@ -62,6 +61,7 @@
         </service>
 
         <activity android:name=".IPC.AidlIPC.BookMangerActivity" />
+        <activity android:name=".greendao.GreenDaoActivity"></activity>
     </application>
 
 </manifest>
