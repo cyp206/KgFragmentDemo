@@ -1,6 +1,7 @@
 package com.snow.yp.kgdemo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,6 +13,7 @@ import com.snow.yp.kgdemo.IPC.AidlIPC.BookMangerActivity;
 import com.snow.yp.kgdemo.adapter.MainAdapter;
 import com.snow.yp.kgdemo.adapter.holder.JMBean;
 import com.snow.yp.kgdemo.greendao.GreenDaoActivity;
+import com.snow.yp.kgdemo.urlscheme.UrlSchemeActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         });
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(mainAdapter);
+
     }
 
     public List<JMBean> getDatas() {
@@ -49,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         datas.add(new JMBean("10、Handler", HandlerActivity.class));
         datas.add(new JMBean("2、IPC", BookMangerActivity.class));
         datas.add(new JMBean("GreenDao", GreenDaoActivity.class));
+        datas.add(new JMBean("UrlScheme", UrlSchemeActivity.class));
         return datas;
     }
 }

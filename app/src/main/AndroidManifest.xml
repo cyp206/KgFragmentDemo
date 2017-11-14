@@ -45,6 +45,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
         <activity android:name=".Handler.HandlerActivity" />
 
@@ -58,10 +60,40 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
+            <intent-filter>
+                <data
+                    android:host="zi"
+                    android:scheme="mu" />
+                <!--android:path="/chi"-->
+                <!--android:port="8888"-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
         </service>
 
         <activity android:name=".IPC.AidlIPC.BookMangerActivity" />
-        <activity android:name=".greendao.GreenDaoActivity"></activity>
+        <activity android:name=".greendao.GreenDaoActivity" />
+        <activity android:name=".urlscheme.UrlSchemeActivity">
+
+        </activity>
+
+        <activity android:name=".urlscheme.UrlSchemeSecondActivity">
+            <intent-filter>
+                <data
+                    android:host="zi"
+                    android:path="/tiam"
+                    android:port="8888"
+                    android:scheme="mu" />
+                <!--BROWSABLE指定该Activity能被浏览器安全调用-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <!--声明自定义scheme，类似于http, https-->
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+        </activity>
     </application>
 
 </manifest>

@@ -39,7 +39,16 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:design:25.3.1'
     testCompile 'junit:junit:4.12'
-    compile 'org.greenrobot:greendao:3.2.2' // add library
+
+    //greendao
+    compile 'org.greenrobot:greendao:3.2.2'
+
+    //annotation
+    compile 'com.squareup:javapoet:1.8.0'
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+
+
+
     compile project(':magicfilter')
     compile project(':commonlibrary')
 }
